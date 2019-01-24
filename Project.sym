@@ -1,0 +1,165 @@
+004-005 @READ_PROGRAM_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY.P2
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B-01C CCP_2
+01C     CCP_2_HIGH
+020     @SCRATCH
+021     @SCRATCH
+021     _RETURN_
+022     @SCRATCH
+023     @SCRATCH
+024     @SCRATCH
+025     @INTERRUPT_AREA
+026     @INTERRUPT_AREA
+027     @INTERRUPT_AREA
+028     @INTERRUPT_AREA
+029     @INTERRUPT_AREA
+02A     @INTERRUPT_AREA
+02B     @INTERRUPT_AREA
+02C     @INTERRUPT_AREA
+02D     @INTERRUPT_AREA
+02E     T1Div
+02F     Speed
+030-031 Temp
+032-033 RefTemp
+034-035 CompTemp
+036-037 RefreshDiv
+038-039 WaitCounter
+03A-03B WaitCompCounter
+03C     Display
+03D     DivDisp
+03E.0   KeyPress
+03E.1   Cool
+03E.2   TimerEnable
+03E.3   Power
+03E.4   Comp
+03E.5   Wait
+03E.6   WaitComp
+03F     TimerSec
+040     TimerMin
+041     TimerHou
+042     TimerSecSvd
+043     TimerMinSvd
+044     TimerHouSvd
+045     ClockSec
+046     ClockMin
+047     ClockHou
+048-049 i
+04A     j
+04B-053 Stream
+054-05C StreamByte
+05D     CmdRem
+05E     PinState
+05F     PinStateOld
+060     RcvEn
+061     EndLoop
+062     Count
+063     TMR
+064     s1
+065     s2
+066.0   pin
+067     WriteStr.Line
+067     DspTime.time
+067     WriteCmd.Cmd
+067     @WRITEBITA.P1
+067     @delay_us1.P2
+067     @MUL88.P3
+067-068 DspInt16.Var
+067     MAIN.@SCRATCH
+067     Config.@SCRATCH
+067     RefreshLCD.@SCRATCH
+067     SaveConfig.@SCRATCH
+067     LoadConfig.@SCRATCH
+068     @delay_ms1.P1
+068     @MUL88.P2
+068     DspTime.Hou
+068     WriteStr.i
+068     @WRITEBITA.P1
+068     MAIN.@SCRATCH
+068     WriteCmd.@SCRATCH
+068     LoadConfig.@SCRATCH
+069-06D DspInt16.Stack
+069     DspTime.Min
+069-06A @WRITEBITA.P1
+069     MAIN.@SCRATCH
+069     WriteStr.@SCRATCH
+06A     DspTime.Sec
+06A     MAIN.@SCRATCH
+06A     WriteStr.@SCRATCH
+06B     @DIV88.P1
+06B     @READBITA.P2
+06B     MAIN.@SCRATCH
+06B     DspTime.@SCRATCH
+06C     @DIV88.P1
+06C-06D @READBITA.P2
+06C     DspTime.@SCRATCH
+06D     @DIV88.@SCRATCH
+06E     WriteC.Charact
+06E     DspInt16.@SCRATCH
+06F     DspInt16.@SCRATCH
+06F     WriteC.@SCRATCH
+070-071 @DIV1616.P1
+070     DspInt16.@SCRATCH
+071     DspInt16.@SCRATCH
+072-073 @DIV1616.P1
+074     @DIV1616.@SCRATCH
+075     COMP_isr.@SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D     @WRITE_PROGRAM_MEMORY.P1
+10D     @READ_PROGRAM_MEMORY.P2
+10F     @READ_PROGRAM_MEMORY.P1
+10F     @WRITE_PROGRAM_MEMORY.P2
+
+011D  @delay_ms1
+0251  @delay_us1
+0037  @const64
+009B  @const93
+00EF  COMP_isr
+0800  MAIN
+01F4  @WRITEBITA
+0214  @READBITA
+022C  @MUL88
+0B6D  @goto10451
+0148  Config
+0453  RefreshLCD
+051A  @goto10608
+0260  SampleADC
+039F  DspInt16
+037A  @DIV1616
+03F7  DspTime
+03E2  @DIV88
+0132  WriteCmd
+0366  WriteStr
+034F  WriteC
+028F  SaveConfig
+01A1  LoadConfig
+0800  @cinit
+
+Project Files:
+    C:\Projects\PCW\16F873A Air Conditioner\Project.c
+    C:\Projects\PCW\16F873A Air Conditioner\Project.h
+    C:\Archivos de programa\PICC\devices\16F873A.h
+
+Units:
+    Project.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F873A
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      C:\Projects\PCW\16F873A Air Conditioner\Project.err
+    Ext Symbols: C:\Projects\PCW\16F873A Air Conditioner\Project.esym
+    INHX8:\       Project.hex
+    Symbols:\     Project.sym
+    List:\        Project.lst
+    Debug/COFF:\  Project.cof
+    Call Tree:   C:\Projects\PCW\16F873A Air Conditioner\Project.tre
+    Statistics:  C:\Projects\PCW\16F873A Air Conditioner\Project.sta

@@ -1,0 +1,93 @@
+
+ROM used: 2205 (54%)
+          2933 (72%) including unused fragments
+
+          2 Average locations per line
+          4 Average locations per statement
+
+RAM used: 76 (40%) at main() level
+          87 (46%) worst case
+
+Stack used: 4 worst case (out of 7 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  820   535 100  C:\Projects\PCW\16F873A Air Conditioner\Project.c
+   70     0   0  C:\Projects\PCW\16F873A Air Conditioner\Project.h
+  270     0   0  C:\Archivos de programa\PICC\devices\16F873A.h
+----- -----
+ 1160   535 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   1   1             @delay_ms1
+0     15   1   1             @delay_us1
+0    100   5   0             @const64
+0     84   4   0             @const93
+0     46   2   1   539  4.7  COMP_isr
+1    877  40   5 11378 15.4  MAIN
+0     32   1   6             @WRITEBITA
+0     24   1   5             @READBITA
+0     37   2   2             @MUL88
+1      8   0   0             @goto10451
+0    172   8   1  1034  3.9  Config
+0    199   9   1  2285  7.4  RefreshLCD
+0     14   1   0             @goto10608
+0     47   2   0   196  4.5  SampleADC
+0     67   3  11   435  5.2  DspInt16
+0     37   2   5             @DIV1616
+0     92   4   6   727  5.3  DspTime
+0     21   1   3             @DIV88
+0     22   1   2   325  2.3  WriteCmd
+0     20   1   4   125  3.7  WriteStr
+0     23   1   2   325  2.3  WriteC
+0    192   9   1   243  3.2  SaveConfig
+ Inline        2   243  3.2  LoadConfig
+
+Program metrics:
+    Functions               12
+    Statements              535
+    Comments                210
+    Volume (V)              23517
+    Difficilty (D)          61.8
+    Effort to implement (E) 1454319
+    Time to implement (T)   22 hours, 27 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   103
+    Maintainability (MI)    78
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00036    51  0  
+00037-007FF  1265  728  
+00800-00FFF   885  1163  
+
+
+
+THE FOLLOWING IS TEMPORARY FOR DIAGNOSTIC USE ONLY:
+
+    n1    n2    N1    N2   v(G)
+     0     1     0     0     0    @delay_ms1
+     0     1     0     0     0    @delay_us1
+     0     1     0     0     0    @const64
+     0     1     0     0     0    @const93
+    10    37    62    35     8    COMP_isr
+    31   513   741   511    70    MAIN
+     0     1     0     0     0    @WRITEBITA
+     0     1     0     0     0    @READBITA
+     0     1     0     0     0    @MUL88
+     0     1     0     0     0    @goto10451
+     8    80    82    78     1    Config
+    15   126   196   124    19    RefreshLCD
+     0     1     0     0     0    @goto10608
+    10    20    22    18     1    SampleADC
+    11    39    40    37     1    DspInt16
+     0     1     0     0     0    @DIV1616
+    11    58    63    56     2    DspTime
+     0     1     0     0     0    @DIV88
+     5    33    31    31     0    WriteCmd
+     8    14    15    13     1    WriteStr
+     5    33    31    31     0    WriteC
+     7    22    30    20     0    SaveConfig
+     7    22    30    20     0    LoadConfig

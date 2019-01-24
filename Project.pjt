@@ -1,0 +1,23 @@
+[PROJECT]
+Target=Project.hex
+Development_Mode=
+Processor_Text=PIC16F873A
+ToolSuite=CCS
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+Processor=0x873A
+[mru-list]
+1=Project
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[Target Data]
+OptionString=-p +FM
+FileList=C:\Projects\PCW\16F873A Air Conditioner\Project.c
+[Units]
+Count=1
+1=Project.c (main)
+Link=0
